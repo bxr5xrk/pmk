@@ -23,3 +23,8 @@ export type Data = Record<number, {
     answerText: string;
   }
 }>
+
+export interface Category {
+  id: string;
+  name: string;
+}
