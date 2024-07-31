@@ -108,7 +108,6 @@ async function stat(headers?: object) {
 }
 
 const REQUEST_FILE_PATH = resolve(__dirname, 'request.txt');
-const DATA_FILE_PATH = resolve(__dirname, 'data.json');
 
 function getJsonPath(name: string) {
   return resolve(__dirname, `${name}.json`);
@@ -120,22 +119,6 @@ function parseRequest(): object | undefined {
   const headers = parsedRequest.header;
 
   return headers;
-}
-
-function readData() {
-  try {
-    if (!existsSync(DATA_FILE_PATH)) {
-      writeFileSync(DATA_FILE_PATH, '{}', 'utf8');
-    }
-
-    const data = readFileSync(DATA_FILE_PATH, 'utf8');
-
-    return (JSON.parse(data) ?? {}) as Data;
-  } catch (error) {
-    console.error("readData ERROR:", error);
-
-    return {};
-  }
 }
 
 function readOrCreateJSON(name: string) {
@@ -179,7 +162,6 @@ async function collectResults(id: number, headers?: object) {
 
       const statRes = await stat(headers);
       const stats: Stat[] = statRes.stat;
-      writeFileSync(resolve(__dirname, 'answers.json'), JSON.stringify(statRes, null, 2));
 
       logger('INFO', `${category} Received answers: ${stats.length}`);
 
