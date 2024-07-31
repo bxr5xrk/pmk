@@ -1,0 +1,19 @@
+curl 'https://tests.if.ua/api/category' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json;charset=UTF-8' \
+  -H 'cookie: PHPSESSID=t6nh53bmp852ciuahfiu52tmma; cf_clearance=3nuF8f61Wv6p37UgIj7FOhQdO1gIgXaLO_wlJn7Aa4o-1722457505-1.0.1.1-QAaxzsk82VY.xS_GuiWfJsrHdqUKp4r71Y8XaNgFHleEc4aorPd2WtrI7nhF7uWlv5zaYzNcaKmUOLwgWK1PTw' \
+  -H 'dnt: 1' \
+  -H 'origin: https://tests.if.ua' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://tests.if.ua/' \
+  -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' \
+  --data-raw '{"id":"426","lang":1}'
