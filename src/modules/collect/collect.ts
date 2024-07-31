@@ -8,8 +8,9 @@ import { Data, Question, Stat } from "src/types";
 export async function collect(id: number, headers: object, host: string) {
   try {
     let isNewResults = true;
+    let attempts = 5;
 
-    while (isNewResults) {
+    while (isNewResults || attempts > 0) {
       await createTest(id, headers, host);
 
       const questionsRes = await getQuestions(headers, host);
@@ -33,7 +34,14 @@ export async function collect(id: number, headers: object, host: string) {
       const mergedData = { ...actualAnswers, ...data };
       const uniqueData = getUniqueData(mergedData);
 
-      statistics(actualAnswers, uniqueData, isNewResults);
+      const offset = statistics(actualAnswers, uniqueData);
+
+      isNewResults = offset > 0;
+
+      if (offset === 0) {
+        attempts--;
+        logger('INFO', `No new results. Attempts left: ${attempts}`);
+      }
 
       // write to file
       writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
@@ -46,14 +54,14 @@ export async function collect(id: number, headers: object, host: string) {
   }
 }
 
-function statistics(actualAnswers: Data, uniqueData: Data, isNewResults: boolean) {
+function statistics(actualAnswers: Data, uniqueData: Data) {
   const oldDataLength = Object.keys(actualAnswers).length;
   const newDataLength = Object.keys(uniqueData).length;
   const offset = newDataLength - oldDataLength;
 
-  isNewResults = offset > 0;
-
   logger('INFO', `Old data: ${oldDataLength}, New data: ${newDataLength}, Offset: ${offset}`);
+
+  return offset;
 }
 
 function getUniqueData(data: Data): Data {

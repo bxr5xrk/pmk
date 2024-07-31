@@ -1,0 +1,82 @@
+{
+  "549951": {
+    "questionText": "Choose the proper English equivalent of the word “клітина-мішень”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674236",
+      "answerText": "target cell"
+    }
+  },
+  "549952": {
+    "questionText": "Choose the proper Ukrainian equivalent of the word “черевний тиф”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674242",
+      "answerText": "typhoid fever"
+    }
+  },
+  "549953": {
+    "questionText": "Choose the proper definition of the term “pyrogenic”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674245",
+      "answerText": "Causing fever"
+    }
+  },
+  "549954": {
+    "questionText": "Choose the proper definition of the term “mycetoid”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674254",
+      "answerText": "Resembling a fungus"
+    }
+  },
+  "549955": {
+    "questionText": "Choose the proper missing word in the sentence “People with impaired defense mechanisms are more … to certain infection”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674255",
+      "answerText": "susceptible"
+    }
+  },
+  "549956": {
+    "questionText": "Choose the proper missing word in the sentence “The immune system produces several substances that specifically … the invading organism”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674263",
+      "answerText": "attack"
+    }
+  },
+  "549957": {
+    "questionText": "Choose the proper missing word in the sentence “Infection by most microorganisms begins when they adhere to a person’s …”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674267",
+      "answerText": "cells"
+    }
+  },
+  "549958": {
+    "questionText": "Choose the proper form of the Conditional Mood “But for his fever the doctor … him from the hospital tomorrow”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674273",
+      "answerText": "would discharge"
+    }
+  },
+  "549959": {
+    "questionText": "Choose the proper form of the Conditional Mood “In your place I … an infectious disease doctor yesterday”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674277",
+      "answerText": "would have consulted"
+    }
+  },
+  "549960": {
+    "questionText": "Choose the proper translation of the sentence “На вашому місці я б уникав контакту з інфекційним хворим”:",
+    "categoryId": "4611",
+    "answer": {
+      "answerId": "2674280",
+      "answerText": "In your place I would avoid contact with a contagious patient"
+    }
+  }
+}
