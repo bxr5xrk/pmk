@@ -1,8 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import parse from '@bany/curl-to-json';
-
-const REQUEST_FILE_PATH = resolve(__dirname, 'request.txt');
+import { REQUEST_FILE_PATH } from "src/const";
 
 export function parseRequest(): object | undefined {
   const requestFile = readFileSync(REQUEST_FILE_PATH, 'utf8');

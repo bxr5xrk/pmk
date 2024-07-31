@@ -1,14 +1,14 @@
-curl 'https://tests.if.ua/api/getstatus' \
+curl 'https://pmk.tests.if.ua/api/gettest' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json;charset=UTF-8' \
-  -H 'cookie: PHPSESSID=t6nh53bmp852ciuahfiu52tmma; cf_clearance=AYbNC0WQE5b01s_jlj_C3y8hvHS4ydFotu4tPBVyw0I-1722461264-1.0.1.1-x4lvxw65nshGpw6mqDSSU0PZkfuGJqOd6WbZ2F.JyftXcvin2mS8e4zunC44QQdSWwOmzrT9p1ju28Eag.q9Iw' \
+  -H 'cookie: messages="0d9b777013b1fb584c72cb60830cc9c5ac2fbed5$[[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]\054[\"__json_message\"\0540\05425\054\"\\u0423\\u0441\\u043f\\u0456\\u0448\\u043d\\u043e \\u0443\\u0432\\u0456\\u0439\\u0448\\u043b\\u0438 \\u044f\\u043a senko_ma.\"]]"; csrftoken=n66NBsAi75pWZixyLj9oL2UQrdRV0Lb0f9RfhrN1NFlMYadskB4BdNh284PirxN3; sessionid=9bnwtcccf4askzs56ju806nr0qtqlyik; cf_clearance=bzvSwu5.7ZlCqgDwfyjt1M8K0A6af4tkvS5AV6W3uhU-1722465463-1.0.1.1-qVd3kNoOaoRhzRysV_yMBkfxfp_13WoBgOZrqfofzP0xCyao.bde5hWr.CSnH28e04VRoGpXYd0wAXdLJI9jxA' \
   -H 'dnt: 1' \
-  -H 'origin: https://tests.if.ua' \
+  -H 'origin: https://pmk.tests.if.ua' \
   -H 'pragma: no-cache' \
   -H 'priority: u=1, i' \
-  -H 'referer: https://tests.if.ua/' \
+  -H 'referer: https://pmk.tests.if.ua/' \
   -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
