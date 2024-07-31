@@ -9,10 +9,6 @@ import { select, input } from "@inquirer/prompts";
 
 const REQUEST_FILE_PATH = resolve(__dirname, 'request.txt');
 
-function getJsonPath(name: string) {
-  return resolve(__dirname, "data", `${name}.json`);
-}
-
 function parseRequest(): object | undefined {
   const requestFile = fs.readFileSync(REQUEST_FILE_PATH, 'utf8');
   const parsedRequest = parse(requestFile);

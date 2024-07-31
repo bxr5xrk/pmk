@@ -1,5 +1,5 @@
 import { apiInstance } from "src/lib/api-instance";
-import { Category } from "src/types";
+import { Category, CreateStudentRes, GetStatRes, GetTestRes } from "src/types";
 
 function getCategory(id: number, headers: object, host: string): Promise<Category[] | null> {
   return apiInstance<Category[]>({
@@ -12,7 +12,7 @@ function getCategory(id: number, headers: object, host: string): Promise<Categor
   })
 }
 
-async function createStudent(category: number, headers: object, host: string) {
+async function createStudent(category: number, headers: object, host: string): Promise<CreateStudentRes | null> {
   return apiInstance({
     data: { category, "lang": 1, "name": "csd", "last_name": "csd", "group": "csd" },
     headers,
@@ -23,7 +23,7 @@ async function createStudent(category: number, headers: object, host: string) {
   })
 }
 
-async function getTest(headers: object, host: string) {
+async function getTest(headers: object, host: string): Promise<GetTestRes | null> {
   return apiInstance({
     data: {},
     headers,
@@ -45,7 +45,7 @@ async function finish(headers: object, host: string) {
   })
 }
 
-async function stat(headers: object, host: string) {
+async function stat(headers: object, host: string): Promise<GetStatRes | null> {
   return apiInstance({
     data: {},
     headers,
