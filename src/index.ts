@@ -1,24 +1,11 @@
-import axios, { AxiosError } from "axios";
-import fs, { existsSync, readFileSync, writeFileSync } from "node:fs"
-import { resolve } from "node:path";
-import parse from '@bany/curl-to-json'
-import { Question, Data, Stat, Category } from "./types";
 import chalk from "chalk";
 import figlet from "figlet";
-import { select, input } from "@inquirer/prompts";
-
-const REQUEST_FILE_PATH = resolve(__dirname, 'request.txt');
-
-function parseRequest(): object | undefined {
-  const requestFile = fs.readFileSync(REQUEST_FILE_PATH, 'utf8');
-  const parsedRequest = parse(requestFile);
-  const headers = parsedRequest.header;
-
-  return headers;
-}
-
-
-
+import { select } from "@inquirer/prompts";
+import { parseRequest } from "./lib/parse-request";
+import { selectCategoryId } from "./lib/select-category-id";
+import { collect } from "./modules/collect";
+import { answer } from "./modules/answer";
+import { logger } from "./lib/logger";
 
 async function main() {
   try {
@@ -51,17 +38,12 @@ async function main() {
     switch (selectedVariant) {
       case 'collect':
         const categoryId = await selectCategoryId(headers, host);
-        await collectResults(categoryId, headers);
+        await collect(categoryId, headers, host);
         break;
       case 'answer':
-        await answerQuestions(headers);
+        await answer(headers, host);
         break;
     }
-
-    // const category = 13955;
-    // await collectResults(category, headers);
-
-    // await answerQuestions(headers);
   } catch (error) {
     if (error instanceof Error) {
       console.error("main ERROR:", error.message);
