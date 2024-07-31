@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 import { api } from "src/api";
-import { getDataPath } from "src/lib/get-data-path";
+import { getQuestions } from "src/lib/get-questions";
 import { logger } from "src/lib/logger";
 import { readJSON } from "src/lib/read-json";
 import { Data, Question, Stat } from "src/types";
@@ -88,12 +88,6 @@ function mergeQuestionsWithAnswers(questions: Question[], stats: Stat[], categor
   }, {} as Data);
 }
 
-interface GetQuestions {
-  questions: Question[];
-  category: string;
-  filePath: string;
-}
-
 async function getStat(headers: object, host: string) {
   try {
     const stat = await api.stat(headers, host);
@@ -120,30 +114,6 @@ function getMap<T>(arr: T[], key: (item: T) => string): Record<string, T> {
   }, {} as Record<string, T>);
 }
 
-async function getQuestions(headers: object, host: string): Promise<GetQuestions | null> {
-  try {
-    const test = await api.getTest(headers, host);
-
-    if (!test?.questions?.length) {
-      throw new Error('Error getting test');
-    }
-
-    const questions: Question[] = test.questions;
-    const category = test.category;
-    const filePath = getDataPath(category);
-
-    logger('INFO', `${category} Received questions: ${questions?.length}`);
-
-    return {
-      questions,
-      category,
-      filePath
-    }
-  } catch (error) {
-    console.error("getQuestions ERROR:", error);
-    return null;
-  }
-}
 
 async function createTest(id: number, headers: object, host: string) {
   try {

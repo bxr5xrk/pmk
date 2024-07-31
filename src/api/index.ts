@@ -56,5 +56,16 @@ async function stat(headers: object, host: string): Promise<GetStatRes | null> {
   })
 }
 
+async function answerQuestion(headers: object, host: string, questionId: string, answerId: string) {
+  return apiInstance({
+    data: { question_id: questionId, answer_id: answerId, isCheat: false, cheatTime: 0 },
+    headers,
+    method: 'POST',
+    name: 'answerQuestion',
+    url: '/answer',
+    host
+  })
+}
 
-export const api = { getCategory, createStudent, getTest, finish, stat };
+
+export const api = { getCategory, createStudent, getTest, finish, stat, answerQuestion };

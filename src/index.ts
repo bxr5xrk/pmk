@@ -19,49 +19,6 @@ function parseRequest(): object | undefined {
 
 
 
-async function answerQuestions(headers: object) {
-  const test = await getTest(headers);
-  const questions: Question[] = test.questions;
-  const category = test.category;
-  const filePath = getJsonPath(category);
-
-  logger('INFO', `${category} Received questions: ${questions?.length}`);
-
-  const actualAnswers = JSON.parse(readFileSync(filePath, 'utf8')) as Data;
-
-  for (let i = 0; i < questions.length; i++) {
-    // for (const question of questions) {
-    const question = questions[i];
-    const questionId = question.id;
-
-    const isAnswered = actualAnswers[questionId];
-
-    if (!isAnswered) {
-      logger("INFO", `No answer for question: ${question.text}`);
-
-      continue;
-    }
-
-    const answer = isAnswered.answer;
-
-    await request({
-      data: { "question_id": questionId, "answer_id": answer.answerId, "isCheat": false, "cheatTime": 0 },
-      headers,
-      method: 'POST',
-      name: 'answer',
-      url: '/answer'
-    });
-
-    logger("INFO", `[${i + 1}/${questions.length}] Answered question: ${question.text}`);
-
-    // wait 1 second
-    await new Promise(resolve => setTimeout(resolve, 1000));
-  }
-
-  logger("INFO", `All questions answered`);
-}
-
-
 
 async function main() {
   try {
