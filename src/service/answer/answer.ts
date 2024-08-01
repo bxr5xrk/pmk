@@ -5,6 +5,7 @@ import { logger } from "src/service/logger";
 import { Data } from "src/types";
 import { collect } from "../collect";
 import { wait } from "src/lib/wait";
+import { readJSON } from "src/lib/read-json";
 
 export async function answer(headers: object, host: string) {
   const questionsRes = await getQuestions(headers, host);
@@ -15,7 +16,7 @@ export async function answer(headers: object, host: string) {
 
   const { questions, filePath, category } = questionsRes;
 
-  const actualAnswers = JSON.parse(readFileSync(filePath, 'utf8') ?? {}) as Data;
+  const actualAnswers = readJSON(filePath);
 
   if (!Object.keys(actualAnswers).length) {
     logger("INFO", `No answers found, collecting...`);
