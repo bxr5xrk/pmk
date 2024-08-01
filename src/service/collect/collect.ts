@@ -4,11 +4,13 @@ import { getQuestions } from "src/lib/get-questions";
 import { logger } from "src/service/logger";
 import { readJSON } from "src/lib/read-json";
 import { Data, Question, Stat } from "src/types";
+import { COLLECT_ATTEMPTS } from "src/const";
+import { wait } from "src/lib/wait";
 
 export async function collect(id: number, headers: object, host: string) {
   try {
     let isNewResults = true;
-    let attempts = 5;
+    let attempts = COLLECT_ATTEMPTS;
 
     while (isNewResults || attempts > 0) {
       await createTest(id, headers, host);
@@ -47,6 +49,9 @@ export async function collect(id: number, headers: object, host: string) {
       writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
 
       logger('INFO', `${category} Data saved`);
+
+      // wait 1 second
+      await wait(1000);
     }
   } catch (error) {
     console.error("collectResults ERROR:", error);

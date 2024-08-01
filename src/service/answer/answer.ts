@@ -3,6 +3,8 @@ import { api } from "src/api";
 import { getQuestions } from "src/lib/get-questions";
 import { logger } from "src/service/logger";
 import { Data } from "src/types";
+import { collect } from "../collect";
+import { wait } from "src/lib/wait";
 
 export async function answer(headers: object, host: string) {
   const questionsRes = await getQuestions(headers, host);
@@ -11,9 +13,15 @@ export async function answer(headers: object, host: string) {
     throw new Error('Error getting questions');
   }
 
-  const { questions, filePath } = questionsRes;
+  const { questions, filePath, category } = questionsRes;
 
   const actualAnswers = JSON.parse(readFileSync(filePath, 'utf8') ?? {}) as Data;
+
+  if (!Object.keys(actualAnswers).length) {
+    logger("INFO", `No answers found, collecting...`);
+
+    await collect(Number(category), headers, host);
+  }
 
   for (let i = 0; i < questions.length; i++) {
     const question = questions[i];
@@ -35,8 +43,4 @@ export async function answer(headers: object, host: string) {
   }
 
   logger("INFO", `All questions answered`);
-}
-
-async function wait(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
 }
