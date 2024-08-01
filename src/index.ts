@@ -1,13 +1,13 @@
 import chalk from "chalk";
 import figlet from "figlet";
 import { select } from "@inquirer/prompts";
-import { parseRequest } from "./lib/parse-request";
 import { selectCategoryId } from "./lib/select-category-id";
 import { collect } from "./service/collect";
 import { answer } from "./service/answer";
 import { logger } from "./service/logger";
 import { join } from "node:path";
 import { readFileSync } from "node:fs";
+import { parseRequest } from "./lib/parse-request";
 
 async function main() {
   try {
