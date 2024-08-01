@@ -64,4 +64,4 @@ async function main() {
   }
 }
 
-main().then(() => logger("INFO", 'Script finished successfully')).catch((error) => logger("ERROR", error.message));
+main().then(() => logger("INFO", '\nScript finished successfully')).catch((error) => logger("ERROR", error.message));

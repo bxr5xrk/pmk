@@ -48,7 +48,7 @@ export async function collect(id: number, headers: object, host: string) {
       // write to file
       writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
 
-      logger('INFO', `${category} Data saved`);
+      logger('INFO', `${category} Data saved\n`);
 
       // wait 1 second
       await wait(1000);
