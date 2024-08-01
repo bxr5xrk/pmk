@@ -1,9 +1,6 @@
-import { readFileSync } from "node:fs";
 import { api } from "src/api";
 import { getQuestions } from "src/lib/get-questions";
 import { logger } from "src/service/logger";
-import { Data } from "src/types";
-import { collect } from "../collect";
 import { wait } from "src/lib/wait";
 import { readJSON } from "src/lib/read-json";
 
@@ -14,14 +11,14 @@ export async function answer(headers: object, host: string) {
     throw new Error('Error getting questions');
   }
 
-  const { questions, filePath, category } = questionsRes;
+  const { questions, filePath } = questionsRes;
 
   const actualAnswers = readJSON(filePath);
 
   if (!Object.keys(actualAnswers).length) {
-    logger("INFO", `No answers found, collecting...`);
+    logger("INFO", `No answers found, collect answers first`);
 
-    await collect(Number(category), headers, host);
+    return;
   }
 
   for (let i = 0; i < questions.length; i++) {
