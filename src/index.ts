@@ -58,7 +58,7 @@ async function main() {
     // ********** Main logic end ********
   } catch (error) {
     if (error instanceof Error) {
-      console.error("main ERROR:", error.message);
+      logger("ERROR", error.message);
       return;
     }
   }
