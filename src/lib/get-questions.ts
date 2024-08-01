@@ -1,7 +1,7 @@
 import { api } from "src/api";
 import { Question } from "src/types";
 import { getDataPath } from "./get-data-path";
-import { logger } from "./logger";
+import { logger } from "../service/logger";
 
 interface GetQuestions {
   questions: Question[];

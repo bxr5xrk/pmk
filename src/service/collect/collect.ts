@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import { api } from "src/api";
 import { getQuestions } from "src/lib/get-questions";
-import { logger } from "src/lib/logger";
+import { logger } from "src/service/logger";
 import { readJSON } from "src/lib/read-json";
 import { Data, Question, Stat } from "src/types";
 

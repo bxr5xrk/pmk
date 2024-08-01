@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { api } from "src/api";
 import { getQuestions } from "src/lib/get-questions";
-import { logger } from "src/lib/logger";
+import { logger } from "src/service/logger";
 import { Data } from "src/types";
 
 export async function answer(headers: object, host: string) {

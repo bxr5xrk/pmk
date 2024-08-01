@@ -1,5 +1,4 @@
 import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import parse from '@bany/curl-to-json';
 import { REQUEST_FILE_PATH } from "src/const";
 
