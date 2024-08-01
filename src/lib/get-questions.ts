@@ -29,7 +29,9 @@ export async function getQuestions(headers: object, host: string): Promise<GetQu
       filePath
     }
   } catch (error) {
-    console.error("getQuestions ERROR:", error);
+    if (error instanceof Error) {
+      logger("ERROR", error.message);
+    }
     return null;
   }
 }

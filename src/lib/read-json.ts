@@ -1,4 +1,5 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { logger } from "src/service/logger";
 import { Data } from "src/types";
 
 export function readJSON(name: string) {
@@ -11,7 +12,9 @@ export function readJSON(name: string) {
 
     return (JSON.parse(data) ?? {}) as Data;
   } catch (error) {
-    console.error("readOrCreateJSON ERROR:", error);
+    if (error instanceof Error) {
+      logger("ERROR", error.message);
+    }
 
     return {};
   }
