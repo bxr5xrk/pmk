@@ -13,3 +13,5 @@ fetch('http://localhost:8080', {
   body: ``,
 });
 ```
+
+https://chatgpt.com/c/670415ea-e3f4-800f-ade7-234bdeaa1f36
