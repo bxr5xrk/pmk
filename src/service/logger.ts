@@ -1,6 +1,6 @@
-import chalk from "chalk";
+import * as chalk from "chalk";
 
-export function logger(status: "ERROR" | "INFO", message: string) {
+export async function logger(status: "ERROR" | "INFO", message: string) {
   const statusText = status === "ERROR" ? chalk.red("ERROR") : chalk.green("INFO");
   const messageText = chalk.cyan(message);
 

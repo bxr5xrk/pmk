@@ -1,9 +1,10 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { LOGIN, PASSWORD, PATH_TO_API_COOKIE_FILE, PATH_TO_WEB_COOKIE_FILE, URL, WAIT_TIME } from "./const";
-import * as playwright from 'playwright';
+import { chromium } from 'playwright';
 import { logger } from "./service/logger";
+import type { Cookie, Page } from 'playwright';
 
-export function getCookieForWeb(): playwright.Cookie[] {
+export function getCookieForWeb(): Cookie[] {
   const data = readFileSync(PATH_TO_WEB_COOKIE_FILE, { encoding: 'utf8' });
 
   return JSON.parse(data || '[]');
@@ -15,7 +16,7 @@ export function getCookieForAPI(): string {
   return data || '';
 }
 
-export function setCookieForWeb(cookies: playwright.Cookie[]) {
+export function setCookieForWeb(cookies: Cookie[]) {
   const data = JSON.stringify(cookies, null, 2);
   writeFileSync(PATH_TO_WEB_COOKIE_FILE, data);
 }
@@ -26,7 +27,7 @@ export function setCookieForAPI(cookie: string) {
 }
 
 
-export function transformCookieFromWebToAPI(cookies?: playwright.Cookie[]) {
+export function transformCookieFromWebToAPI(cookies?: Cookie[]) {
   if (!cookies) {
     return '';
   }
@@ -42,7 +43,7 @@ export function transformCookieFromWebToAPI(cookies?: playwright.Cookie[]) {
   return cookie;
 }
 
-async function wait(page: playwright.Page, time?: number) {
+async function wait(page: Page, time?: number) {
   const defaultTime = time || WAIT_TIME;
 
   console.log(`Waiting for ${defaultTime}ms`);
@@ -52,7 +53,7 @@ async function wait(page: playwright.Page, time?: number) {
 export async function getCookieFromWeb(userAgent: string) {
   try {
     const cookies = getCookieForWeb();
-    const browser = await playwright.chromium.launch({headless: false});
+    const browser = await chromium.launch({headless: false});
     const context = await browser.newContext({ userAgent });
 
     const page = await context.newPage();
