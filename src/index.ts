@@ -39,7 +39,7 @@ server.get('/', async (request, reply) => {
   reply.send('happy cheating)\n').code(202);
 })
 
-server.listen({ port }, (err, address) => {
+server.listen({ port, host: "0.0.0.0" }, (err, address) => {
   if (err) {
     console.error(err)
     process.exit(1)
