@@ -1,8 +1,8 @@
-import { api } from "src/api";
-import { getQuestions } from "src/lib/get-questions";
-import { logger } from "src/service/logger";
-import { wait } from "src/lib/wait";
-import { readJSON } from "src/lib/read-json";
+import { getQuestions } from "../../lib/get-questions";
+import { logger } from "../../service/logger";
+import { wait } from "../../lib/wait";
+import { readJSON } from "../../lib/read-json";
+import { api } from "../../api";
 
 export async function answer(headers: object, host: string) {
   const questionsRes = await getQuestions(headers, host);

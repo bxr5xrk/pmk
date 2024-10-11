@@ -14,7 +14,7 @@ export async function apiInstance<T>(props: RequestProps): Promise<T | null> {
       url: `${host}${url}`,
       method,
       data,
-      headers
+      headers,
     });
 
     return res.data;

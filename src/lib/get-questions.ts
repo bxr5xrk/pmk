@@ -1,5 +1,5 @@
-import { api } from "src/api";
-import { Question } from "src/types";
+import { api } from "../api";
+import { Question } from "../types";
 import { getDataPath } from "./get-data-path";
 import { logger } from "../service/logger";
 

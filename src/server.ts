@@ -1,42 +1,47 @@
 import fastify from 'fastify';
 import cors from "@fastify/cors";
 import { answer } from './service/answer';
+import { getCookieForAPI, getCookieFromWeb, setCookieForAPI, transformCookieFromWebToAPI } from './cookie';
+import { getAllHeaders } from './headers';
+import { URL } from './const';
+import { logger } from './service/logger';
 
 const server = fastify()
-
 server.register(cors);
 
-server.get('/ping', async (request, reply) => {
-  reply.send('pong\n')
+server.get('/', async (request, reply) => {
+  const userAgent = (request.query as { userAgent: string }).userAgent;
+
+  if (!userAgent) {
+    reply.send('User-Agent is required\n').code(400);
+    return;
+  }
+
+  const decodedUserAgent = decodeURIComponent(userAgent);
+  logger('INFO', `User-Agent: ${decodedUserAgent}`);
+
+  let cookie = getCookieForAPI();
+
+  if (!cookie) {
+    const cookieFromWeb = await getCookieFromWeb(decodedUserAgent);
+    const cookieForAPI = transformCookieFromWebToAPI(cookieFromWeb);
+    setCookieForAPI(cookieForAPI);
+    cookie = cookieForAPI;
+  }
+
+  logger('INFO', `Cookie: ${cookie}`);
+
+  const headers = getAllHeaders(cookie, decodedUserAgent);
+
+  answer(headers, URL + 'api');
+
+  reply.send('happy cheating)\n').code(202);
 })
 
-server.post('/', async (request, reply) => {
-  const headers = parsecURLHeaders(request.body as string);
-
-  const host = `https://tests.if.ua/api`;
-  answer(headers, host);
-
-  reply.send('ok\n');
-})
-
-server.listen({ port: 8080 }, (err, address) => {
+server.listen({ port: 8080, host: '127.0.0.1' }, (err, address) => {
   if (err) {
     console.error(err)
     process.exit(1)
   }
   console.log(`Server listening at ${address}`)
 })
-
-function parsecURLHeaders(curlCommand: string) {
-  const headerMatches = curlCommand.match(/-H '([^:]+): ([^']+)'/g);
-
-  const headers: Record<string, string> = {};
-  if (headerMatches) {
-    headerMatches.forEach((header) => {
-      const [key, value] = header.slice(4).split(': ');
-      headers[key] = value;
-    });
-  }
-
-  return headers;
-}

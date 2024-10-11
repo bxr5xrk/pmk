@@ -1,19 +1,17 @@
-curl 'https://tests.if.ua/api/category' \
+curl 'https://tests.if.ua/api/gettest' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7' \
-  -H 'cache-control: no-cache' \
   -H 'content-type: application/json;charset=UTF-8' \
-  -H 'cookie: PHPSESSID=t6nh53bmp852ciuahfiu52tmma; cf_clearance=bzvSwu5.7ZlCqgDwfyjt1M8K0A6af4tkvS5AV6W3uhU-1722465463-1.0.1.1-qVd3kNoOaoRhzRysV_yMBkfxfp_13WoBgOZrqfofzP0xCyao.bde5hWr.CSnH28e04VRoGpXYd0wAXdLJI9jxA' \
+  -H 'cookie: PHPSESSID=qsi5hmjhefpu699u53hrvlba4o; cf_clearance=vY625alYFaOCiU1sjMn20TwiEcREJTiU0orM0vTvAyY-1728669146-1.2.1.1-1Qjp7C51A2QfQ4BxPF78VY1vSiPxJXztC9KTyJMV_v.ZM67T_ae4sXASJcurghir1avjqWmNZvD7MtZ6mNynPmgo_UBwk_L4a8R9Rv6HRRdrOYJqYOYo9GRcLSJ.GkkwcsNUZJCpW4E_1VHkDuXLeF3Xe4GUc202TiMBkwvrw.B4lzT3T4fnxzn_97zMVACHwYHFq0ZlurVE5eB2adLdAtWVdT3a9sdDM0HC83v2FQFgUO.3535CUODCJcAr1G0PULEjk9506dY2KVxLY6HxF048egeDcmkRYOaL2A.y4v5OQbDsIdk6XO3BCvMYYKNzeIFoALiPsgj0IILLS79BbivLCfjKgoYwapdaUh2D3XV9igONIOfiFjYj7zskRWJQ6JrCCiP55Z.r1vkmaO_GfA' \
   -H 'dnt: 1' \
   -H 'origin: https://tests.if.ua' \
-  -H 'pragma: no-cache' \
   -H 'priority: u=1, i' \
   -H 'referer: https://tests.if.ua/' \
-  -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
+  -H 'sec-ch-ua: "Google Chrome";v="129", "Not=A?Brand";v="8", "Chromium";v="129"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' \
-  --data-raw '{"id":"426","lang":1}'
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36' \
+  --data-raw '{}'

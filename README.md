@@ -12,6 +12,8 @@ fetch('http://localhost:8080', {
   },
   body: ``,
 });
+
+fetch(`http://127.0.0.1:8080?userAgent=${encodeURIComponent(window.navigator.userAgent)}`)
 ```
 
 https://chatgpt.com/c/670415ea-e3f4-800f-ade7-234bdeaa1f36

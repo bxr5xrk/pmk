@@ -1,5 +1,5 @@
-import { apiInstance } from "src/lib/api-instance";
-import { Category, CreateStudentRes, GetStatRes, GetTestRes } from "src/types";
+import { apiInstance } from "../lib/api-instance";
+import { Category, CreateStudentRes, GetStatRes, GetTestRes } from "../types";
 
 function getCategory(id: number, headers: object, host: string): Promise<Category[] | null> {
   return apiInstance<Category[]>({
@@ -30,7 +30,7 @@ async function getTest(headers: object, host: string): Promise<GetTestRes | null
     method: 'POST',
     name: 'getTest',
     url: '/gettest',
-    host
+    host,
   })
 }
 

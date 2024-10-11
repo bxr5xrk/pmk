@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { logger } from "src/service/logger";
-import { Data } from "src/types";
+import { logger } from "../service/logger";
+import { Data } from "../types";
 
 export function readJSON(name: string) {
   try {
