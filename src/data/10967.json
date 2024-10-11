@@ -1,0 +1,402 @@
+{
+  "688486": {
+    "questionText": "...'s your name? Thomas.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359531",
+      "answerText": "What"
+    }
+  },
+  "688487": {
+    "questionText": "This is Lucy and her brother, Dan. ... my friends.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359537",
+      "answerText": "They're"
+    }
+  },
+  "688488": {
+    "questionText": "…? I'm from Italy.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359539",
+      "answerText": "Where are you from?"
+    }
+  },
+  "688489": {
+    "questionText": "I'm from Milan. ... is in Italy.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359545",
+      "answerText": "It"
+    }
+  },
+  "688490": {
+    "questionText": "Excuse me, how ... your last name? R-I-L-E-Y",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359551",
+      "answerText": "do you spell"
+    }
+  },
+  "688491": {
+    "questionText": "Oh, ... are my keys!",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359555",
+      "answerText": "These"
+    }
+  },
+  "688492": {
+    "questionText": "I'd like ... omelette, please.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359561",
+      "answerText": "an"
+    }
+  },
+  "688493": {
+    "questionText": "And here is your ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359564",
+      "answerText": "desk"
+    }
+  },
+  "688494": {
+    "questionText": "My name's Pete and this is Sylvia. ... doctors from France.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359570",
+      "answerText": "We're"
+    }
+  },
+  "688495": {
+    "questionText": "Sorry, ... Paul. My name's Eric.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359577",
+      "answerText": "I'm not"
+    }
+  },
+  "688496": {
+    "questionText": "...? No, he isn't.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359581",
+      "answerText": "Is Mr Banning a teacher?"
+    }
+  },
+  "688497": {
+    "questionText": "... is the school? It's 50 years old.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359587",
+      "answerText": "How old"
+    }
+  },
+  "688498": {
+    "questionText": "What is ...?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359591",
+      "answerText": "Mary's job"
+    }
+  },
+  "688499": {
+    "questionText": "Your bag is next ... the table.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359595",
+      "answerText": "to"
+    }
+  },
+  "688500": {
+    "questionText": "... are the keys? On the table.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359601",
+      "answerText": "Where"
+    }
+  },
+  "688501": {
+    "questionText": "I go to work ... train.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359605",
+      "answerText": "by"
+    }
+  },
+  "688502": {
+    "questionText": "She ... a dog.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359612",
+      "answerText": "doesn't have"
+    }
+  },
+  "688503": {
+    "questionText": "Stephen ... in our company.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359615",
+      "answerText": "works"
+    }
+  },
+  "688504": {
+    "questionText": "... they live in London?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359621",
+      "answerText": "Do"
+    }
+  },
+  "688505": {
+    "questionText": "...to the cinema.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359626",
+      "answerText": "We don't often go"
+    }
+  },
+  "688506": {
+    "questionText": "When do you play tennis? ... Mondays.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359629",
+      "answerText": "On"
+    }
+  },
+  "688507": {
+    "questionText": "What time ... work?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359637",
+      "answerText": "does he start"
+    }
+  },
+  "688508": {
+    "questionText": "... two airports in the city.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359641",
+      "answerText": "There are"
+    }
+  },
+  "688509": {
+    "questionText": "There aren't ... here.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359645",
+      "answerText": "any restaurants"
+    }
+  },
+  "688510": {
+    "questionText": "I'm afraid it's ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359652",
+      "answerText": "an expensive hotel"
+    }
+  },
+  "688511": {
+    "questionText": "They ... popular TV programmes in the 1980s.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359655",
+      "answerText": "were"
+    }
+  },
+  "688512": {
+    "questionText": "... at school last week?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359661",
+      "answerText": "Were you"
+    }
+  },
+  "688513": {
+    "questionText": "Brad Pitt is a popular actor but I don't like ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359664",
+      "answerText": "him"
+    }
+  },
+  "688514": {
+    "questionText": "We ... the film last week.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359670",
+      "answerText": "saw"
+    }
+  },
+  "688515": {
+    "questionText": "He ... tennis with me yesterday.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359677",
+      "answerText": "didn't play"
+    }
+  },
+  "688516": {
+    "questionText": "She was born ... May 6th, 1979.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359681",
+      "answerText": "on"
+    }
+  },
+  "688517": {
+    "questionText": "Where ... last summer?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359687",
+      "answerText": "did you go"
+    }
+  },
+  "688518": {
+    "questionText": "Were you at the shops at 5 p.m. yesterday?\tNo, I ...",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359691",
+      "answerText": "wasn't"
+    }
+  },
+  "688519": {
+    "questionText": "Excuse me, ... is the T-shirt? It's ₤25.99.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359695",
+      "answerText": "how much"
+    }
+  },
+  "688520": {
+    "questionText": "She's only four but she ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359699",
+      "answerText": "can read"
+    }
+  },
+  "688521": {
+    "questionText": "This party is boring. We ... a good time.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359705",
+      "answerText": "aren't having"
+    }
+  },
+  "688522": {
+    "questionText": "Sorry, I ... you at the moment.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359709",
+      "answerText": "can't help"
+    }
+  },
+  "688523": {
+    "questionText": "I ... my computer very often.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359715",
+      "answerText": "don't use"
+    }
+  },
+  "688524": {
+    "questionText": "It's my mum's birthday next week. I ... her a present.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359721",
+      "answerText": "am going to buy"
+    }
+  },
+  "688525": {
+    "questionText": "What ... do after school today?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359724",
+      "answerText": "are you going to"
+    }
+  },
+  "688526": {
+    "questionText": "Gina is married to John. He's her ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359730",
+      "answerText": "husband"
+    }
+  },
+  "688527": {
+    "questionText": "We usually ... the shopping in a supermarket.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359735",
+      "answerText": "do"
+    }
+  },
+  "688528": {
+    "questionText": "I love this watch! It's ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359741",
+      "answerText": "beautiful"
+    }
+  },
+  "688529": {
+    "questionText": "He doesn't have a car so he often uses public ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359745",
+      "answerText": "transport"
+    }
+  },
+  "688530": {
+    "questionText": "I don't go to ... on Sundays.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359752",
+      "answerText": "work"
+    }
+  },
+  "688531": {
+    "questionText": "Do you like Chinese ...?",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359756",
+      "answerText": "food"
+    }
+  },
+  "688532": {
+    "questionText": "They hardly ... visit us.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359759",
+      "answerText": "ever"
+    }
+  },
+  "688533": {
+    "questionText": "I'm Jeff Caine. Nice to ... you, Mr Caine.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359766",
+      "answerText": "meet"
+    }
+  },
+  "688534": {
+    "questionText": "Can I help you? Thanks, but I'm just ... .",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359770",
+      "answerText": "looking"
+    }
+  },
+  "688535": {
+    "questionText": "Mandy is over there. She's ... a blue T-shirt and jeans.",
+    "categoryId": "10967",
+    "answer": {
+      "answerId": "3359775",
+      "answerText": "wearing"
+    }
+  }
+}
