@@ -6,6 +6,7 @@ import { getAllHeaders } from './headers';
 import { URL } from './const';
 import { logger } from './service/logger';
 
+const port = Number(process.env.PORT) || 4000;
 const server = fastify()
 server.register(cors);
 
@@ -38,7 +39,7 @@ server.get('/', async (request, reply) => {
   reply.send('happy cheating)\n').code(202);
 })
 
-server.listen({ port: 8080, host: '127.0.0.1' }, (err, address) => {
+server.listen({ port }, (err, address) => {
   if (err) {
     console.error(err)
     process.exit(1)
