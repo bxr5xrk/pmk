@@ -1,0 +1,402 @@
+{
+  "1199106": {
+    "questionText": "Choose the proper English equivalent of the word “марля”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884506",
+      "answerText": "gauze"
+    }
+  },
+  "1199107": {
+    "questionText": "Choose the proper English equivalent of the word “підкладне судно”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884510",
+      "answerText": "bedpan"
+    }
+  },
+  "1199108": {
+    "questionText": "Choose the proper English equivalent of the word “вивих”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884517",
+      "answerText": "sprain"
+    }
+  },
+  "1199109": {
+    "questionText": "Choose the proper English equivalent of the word “поясниця”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884521",
+      "answerText": "small of the back"
+    }
+  },
+  "1199110": {
+    "questionText": "Choose the proper English equivalent of the word “талія”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884529",
+      "answerText": "waist"
+    }
+  },
+  "1199111": {
+    "questionText": "Choose the proper English equivalent of the word “сечівник”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884531",
+      "answerText": "urethra"
+    }
+  },
+  "1199112": {
+    "questionText": "Choose the proper English equivalent of the word “пах”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884535",
+      "answerText": "groin"
+    }
+  },
+  "1199113": {
+    "questionText": "Choose the proper English equivalent of the word “видихати”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884543",
+      "answerText": "to exhale"
+    }
+  },
+  "1199114": {
+    "questionText": "Choose the proper English equivalent of the word “опік”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884545",
+      "answerText": "burn"
+    }
+  },
+  "1199115": {
+    "questionText": "Choose the proper English equivalent of the word “біологічно небезпечний”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884554",
+      "answerText": "biohazard"
+    }
+  },
+  "1199116": {
+    "questionText": "Choose the synonym to the term “trunk”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884555",
+      "answerText": "torso"
+    }
+  },
+  "1199117": {
+    "questionText": "Choose the synonym to the term “esophagus”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884561",
+      "answerText": "gullet"
+    }
+  },
+  "1199118": {
+    "questionText": "Choose the antonym to the term “healthy”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884567",
+      "answerText": "diseased"
+    }
+  },
+  "1199119": {
+    "questionText": "Choose the antonym to the term “to increase”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884570",
+      "answerText": "to decrease"
+    }
+  },
+  "1199120": {
+    "questionText": "Choose the proper English equivalent of the word “клапан”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884579",
+      "answerText": "valve"
+    }
+  },
+  "1199121": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “He developed an … to penicillin”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884580",
+      "answerText": "allergy"
+    }
+  },
+  "1199122": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “… drugs are administered by placing the medication under the tongue”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884586",
+      "answerText": "sublingual"
+    }
+  },
+  "1199123": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “Please, get me a syringe, so I can give the patient an …”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884590",
+      "answerText": "injection"
+    }
+  },
+  "1199124": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “Emphysema is a chronic lung disease in which the … at the end of the small bronchioles are enlarged or over-inflated and are eventually destroyed”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884596",
+      "answerText": "alveoli"
+    }
+  },
+  "1199125": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “The …clearly showed that the bone was broken”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884600",
+      "answerText": "X-ray"
+    }
+  },
+  "1199126": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “The asthmatic patient complained of …”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884606",
+      "answerText": "shortness of breath"
+    }
+  },
+  "1199127": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “Please, put … of cleaning solution in each ear. Use a dropper”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884612",
+      "answerText": "drops"
+    }
+  },
+  "1199128": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “He is not producing enough … to control his daily sleep cycle”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884617",
+      "answerText": "melatonin"
+    }
+  },
+  "1199129": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “The brain and the spinal cord make up the central …”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884620",
+      "answerText": "nervous system"
+    }
+  },
+  "1199130": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “The male and female … produce different sex cells”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884627",
+      "answerText": "gonads"
+    }
+  },
+  "1199131": {
+    "questionText": "Choose the proper missing word or word combination in the sentence “This man needs … now, or he will bleed to death”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884631",
+      "answerText": "transfusion"
+    }
+  },
+  "1199132": {
+    "questionText": "Choose the proper definition of the term “operating theatre”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884637",
+      "answerText": "A special room in a hospital, where surgical operations are carried out"
+    }
+  },
+  "1199133": {
+    "questionText": "Choose the proper definition of the term “to diagnose”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884643",
+      "answerText": "means to identify a condition or illness, by examining the person and noting symptoms"
+    }
+  },
+  "1199134": {
+    "questionText": "Choose the proper definition of the term “to admit”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884646",
+      "answerText": "means to register a patient in a hospital"
+    }
+  },
+  "1199135": {
+    "questionText": "Choose the proper definition of the term “rescue breathing”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884650",
+      "answerText": "A first aid procedure involving providing air for someone who has stopped breathing, but still has a heartbeat"
+    }
+  },
+  "1199136": {
+    "questionText": "Choose the proper definition of the term “onset”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884656",
+      "answerText": "The first instance of something"
+    }
+  },
+  "1199137": {
+    "questionText": "Choose the proper definition of the term “infertility”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884660",
+      "answerText": "The inability to have children"
+    }
+  },
+  "1199138": {
+    "questionText": "Choose the proper definition of the term “contusion”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884667",
+      "answerText": "A discolored area of skin caused by external trauma"
+    }
+  },
+  "1199139": {
+    "questionText": "Choose the proper meaning of  “PRN”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884670",
+      "answerText": "given as needed"
+    }
+  },
+  "1199140": {
+    "questionText": "Choose the proper meaning of “pc”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884678",
+      "answerText": "Take after meals"
+    }
+  },
+  "1199141": {
+    "questionText": "If the medicine is given P.R. it means:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884680",
+      "answerText": "It is taken through the rectum"
+    }
+  },
+  "1199142": {
+    "questionText": "Choose the correct form of the missing verb  “The pain ______ yet.”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884686",
+      "answerText": "hasn’t subsided"
+    }
+  },
+  "1199143": {
+    "questionText": "Choose the correct form of the missing verb “People who ________ (not be) very sick ________ (treat) at home”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884690",
+      "answerText": "are not are treated"
+    }
+  },
+  "1199144": {
+    "questionText": "Choose the correct form of the missing verb “The child ________ (examine) by the well-known professor right now”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884698",
+      "answerText": "is being examined"
+    }
+  },
+  "1199145": {
+    "questionText": "Choose the correct form of the missing verb “Smoking ________ (ban) in public places in our country”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884701",
+      "answerText": "is banned"
+    }
+  },
+  "1199146": {
+    "questionText": "Choose the correct form of the missing verb “Many accidents … (to cause) by dangerous driving”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884705",
+      "answerText": "are caused"
+    }
+  },
+  "1199147": {
+    "questionText": "Choose the correct form of the missing verb “Measles … (to cause) red rash all over the body”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884713",
+      "answerText": "causes"
+    }
+  },
+  "1199148": {
+    "questionText": "Choose the correct form of the missing verb “They usually … such problems at the conferences”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884715",
+      "answerText": "discuss"
+    }
+  },
+  "1199149": {
+    "questionText": "Choose the correct form of the missing verb “In his lecture the professor already … the difference between asthma and emphysema”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884723",
+      "answerText": "has explained"
+    }
+  },
+  "1199150": {
+    "questionText": "Choose the correct form of the missing verb “The instruments … just (to sterilize) by the nurse”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884726",
+      "answerText": "have been sterilized"
+    }
+  },
+  "1199151": {
+    "questionText": "Choose the correct form of the missing verb “They … their laboratory tests two days ago”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884731",
+      "answerText": "got"
+    }
+  },
+  "1199152": {
+    "questionText": "Use the correct preposition “Prevent shock … elevating the legs and covering the victim”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884736",
+      "answerText": "by"
+    }
+  },
+  "1199153": {
+    "questionText": "Use the correct preposition “The doctor always listens … the patient’s lungs with his stethoscope”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884744",
+      "answerText": "to"
+    }
+  },
+  "1199154": {
+    "questionText": "Use the correct preposition “He is going to see his doctor …Tuesday, … 2 p.m.”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884747",
+      "answerText": "on, at"
+    }
+  },
+  "1199155": {
+    "questionText": "Use the correct preposition “This five-year-old child is allergic … chocolate”:",
+    "categoryId": "23380",
+    "answer": {
+      "answerId": "5884752",
+      "answerText": "to"
+    }
+  }
+}
